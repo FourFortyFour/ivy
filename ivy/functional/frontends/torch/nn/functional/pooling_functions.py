@@ -156,6 +156,20 @@ def max_pool2d(
     return ret
 
 
+@with_unsupported_dtypes({"2.0.1 and below": ("float16",)}, "torch")
+@to_ivy_arrays_and_back
+def max_pool3d(
+    input,
+    kernel_size,
+    stride=None,
+    padding=0,
+    dilation=1,
+    ceil_mode=False,
+    return_indices=False,
+):
+    ...
+
+
 @with_unsupported_dtypes(
     {
         "2.0.1 and below": (
