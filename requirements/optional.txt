@@ -27,3 +27,4 @@ autoflake # for backend generation
 snakeviz # for profiling
 cryptography
 xgboost
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
